@@ -6,12 +6,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="rock-paper-scissors.js" defer></script>
+    
 </head>
 
 <body>
 
-  <script src="rock-paper-scissors.js"></script>
-  
+    <header class="header">
+        <div class="pageTitle">Rock, Paper, Scissors</div>
+    </header>
+
+    <div class="rulesDiv">
+        <div class="rulesTitle">How To Play</div>
+        <ul>
+            <li>Click on one of the buttons below to select your choice, the computer choice is generated automatically.</li>
+            <li>After each round the result and a cumulative score will be displayed.</li>
+            <li>The first to reach 5 points is the winner.</li>
+        </ul>    
+    </div>
+
+    <div class="buttons">
+        <button id="Rock" class="rockButton">
+            <img src="Rock.jpg" title="Rock" value="Rock" width="100" height="100">
+        </button>
+        <button id="Paper" class="paperButton">
+            <img src="Paper.jpg" title="Paper" width="100" height="100">
+        </button>
+        <button id="Scissors" class="scissorsButton">
+            <img src="Scissors.jpg" title="Scissors" width="100" height="100">
+        </button>
+    </div>
+
+    <div class="resultsDiv">
+        <div class="resultsHeading">Results:</div>
+        <div class="resultsDetail">
+            <div class="roundDetail"></div>
+            <div class="choicesDetail"></div>
+            <div class="innerResultsDetail"></div>
+            <div class="scoresDetail"></div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p  id="modalText"></p>
+        </div>
+    </div>
+
 </body>
 
 </html>
